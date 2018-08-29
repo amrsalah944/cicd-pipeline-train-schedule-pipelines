@@ -4,7 +4,7 @@ pipeline {
     stage ('Build') {
       steps {
         echo 'Running atomation'
-        sh './gradlew build --nodaemon'
+        sh './gradlew build --no-daemon'
         archiveArtfacts artfacts: 'dist/trainSchedule.zip'
       }
     }
