@@ -6,9 +6,7 @@ pipeline {
         echo 'Running atomation'
         sh './gradlew build --nodaemon'
         archiveArtfacts artfacts: 'dist/trainSchedule.zip'
+      }
     }
-  
   }
-
-}
 }
